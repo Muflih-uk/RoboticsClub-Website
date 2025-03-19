@@ -9,19 +9,25 @@ const Home = () => {
 
   return (
     <section className='h-screen'>
-      <nav className="bg-white shadow-md">
-        {/*<div>
-          <Image
-            src={'/RoboLogo.jpeg'}
-            height={30}
-            width={100}
-            alt='Logo'
-          />
-        </div>*/}
+      <nav className="bg-black shadow-md">
         <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center py-4 bg-black">
-          {/* Desktop Navigation */}
-            <div className="hidden md:flex space-x-[40px] ml-[680px] bg-white">
+          <div className="flex justify-between items-center py-4">
+            {/* Desktop Navigation */}
+            <Image
+              src={'/RoboLogo.jpeg'}
+              width={200}
+              height={60}
+              alt='logo Desktop'
+              className='hidden md:block'
+            />
+            <Image
+              src={'/RoboLogo.jpeg'}
+              width={100}
+              height={30}
+              alt='logo mobile'
+              className='md:hidden'
+            />
+            <div className="hidden md:flex space-x-[40px] ml-[400px] bg-white">
               {navItems.map((item) => (
                 <Link key={item} href={`/${item.toLowerCase()}`}
                   className={`font-bold text-3xl text-gray-700 hover:text-blue-500`}>
@@ -33,7 +39,7 @@ const Home = () => {
             {/* Hamburger Menu Button (Visible on Mobile) */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="ml-[300px] md:hidden"
+              className="ml-[200px] md:hidden"
               aria-label="Toggle menu"
               aria-expanded={isOpen}
             >
@@ -58,7 +64,7 @@ const Home = () => {
               {navItems.map((item) => (
                 <Link key={item} href={`/${item.toLowerCase()}`}
                     onClick={() => setIsOpen(false)}
-                  className="text-gray-700 hover:text-blue-500">
+                  className="text-white hover:text-blue-500">
                   {item}
                 </Link>
               ))}
