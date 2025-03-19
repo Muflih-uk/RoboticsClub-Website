@@ -27,16 +27,16 @@ const Home = () => {
               alt='logo mobile'
               className='md:hidden'
             />
-            <div className="hidden md:flex space-x-[40px] ml-[400px] bg-white">
+            <div className="hidden md:flex space-x-[40px] ml-[400px]">
               {navItems.map((item) => (
                 <Link key={item} href={`/${item.toLowerCase()}`}
-                  className={`font-bold text-3xl text-gray-700 hover:text-blue-500`}>
+                  className={`font-bold text-3xl text-white hover:text-blue-500`}>
                   {item}
                 </Link>
               ))}
             </div>
 
-            {/* Hamburger Menu Button (Visible on Mobile) */}
+            {/* Menu Button (Visible on Mobile) */}
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="ml-[200px] md:hidden"
