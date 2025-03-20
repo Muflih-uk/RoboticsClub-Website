@@ -73,7 +73,8 @@ const Home = () => {
           </div>
         </div>
       </nav>
-        <ParticleAnimation/>
+      <ParticleAnimation/>
+      <h1 className='fixed text-red-900 bg-black'>Hello World</h1>
       </section>
   );
 };
