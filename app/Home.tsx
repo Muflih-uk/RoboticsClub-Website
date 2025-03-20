@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import ParticleAnimation from '@/Components/ParticleAnimation';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -72,6 +73,7 @@ const Home = () => {
           </div>
         </div>
       </nav>
+        <ParticleAnimation/>
       </section>
   );
 };
