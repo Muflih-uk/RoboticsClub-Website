@@ -1,5 +1,4 @@
 import Home from "./Home";
-
 const Page = () => {
   return(
     <Home/>
