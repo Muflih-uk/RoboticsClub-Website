@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import ParticleAnimation from '@/Components/ParticleAnimation';
@@ -7,6 +7,29 @@ import ParticleAnimation from '@/Components/ParticleAnimation';
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navItems = ['Team', 'Projects', 'Events', 'Contact Us'];
+  const words = ["INNOVATE", "BUILD", "CREATE"];
+  const [index, setIndex] = useState(0);
+  const [subIndex, setSubIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    if (subIndex === words[index].length + 1 && !isDeleting) {
+      setTimeout(() => setIsDeleting(true), 1000);
+      return;
+    }
+    
+    if (subIndex === 0 && isDeleting) {
+      setIsDeleting(false);
+      setIndex((prev) => (prev + 1) % words.length);
+      return;
+    }
+
+    const timeout = setTimeout(() => {
+      setSubIndex((prev) => prev + (isDeleting ? -1 : 1));
+    }, isDeleting ? 50 : 100);
+
+    return () => clearTimeout(timeout);
+  }, [subIndex, index, isDeleting]);
 
   return (
     <section className='h-screen'>
@@ -60,15 +83,21 @@ const Home = () => {
           </div>
         </div>
       </nav>
-      <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
-        <div className='flex flex-col bg-red-600 space-y-2 py-4'>
-          {navItems.map((item) => (
-            <Link key={item} href={`/${item.toLowerCase()}`}
-              onClick={() => setIsOpen(false)}
-              className='text-white hover:text-blue-500'>
-              {item}
-            </Link>
-          ))}
+      <div>
+        <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
+          <div className='flex flex-col space-y-[2px] pt-[2px]'>
+            {navItems.map((item) => (
+              <Link key={item} href={`/${item.toLowerCase()}`}
+                onClick={() => setIsOpen(false)}
+                className='text-white flex bg-black items-center justify-center h-[34px] pl-[20px] hover:text-blue-500 rounded-full'>
+                {item}
+              </Link>
+            ))}
+          </div>
+        </div>
+        <div className={`${isOpen ? 'hidden':'block'} md:hidden h-[160px] flex flex-col justify-center items-center`}>
+          <h1 className='text-black text-3xl'>WE</h1>
+          <h1 className='text-black text-3xl'>{words[index].substring(0,subIndex)}</h1>
         </div>
       </div>
       <ParticleAnimation/>
