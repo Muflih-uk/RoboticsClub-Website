@@ -1,7 +1,11 @@
 import Home from "./Home";
+import Gallery from "./Gallery";
 const Page = () => {
   return(
-    <Home/>
+    <div>
+      <Home/>
+      <Gallery/>
+    </div>
   )
 }
 

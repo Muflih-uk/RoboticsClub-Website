@@ -86,11 +86,11 @@ const Home = () => {
       </nav>
       <div>
         <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
-          <div className='flex flex-col space-y-[2px] pt-[2px]'>
+          <div className='flex flex-col space-y-[2px] pt-[2px] px-[8px]'>
             {navItems.map((item) => (
               <Link key={item} href={`/${item.toLowerCase()}`}
                 onClick={() => setIsOpen(false)}
-                className='text-white flex bg-black items-center justify-center h-[34px] pl-[20px] hover:text-blue-500 rounded-full'>
+                className='text-white flex bg-black items-center justify-center h-[34px] pl-[20px] hover:text-blue-500 rounded-[10px]'>
                 {item}
               </Link>
             ))}
@@ -102,6 +102,9 @@ const Home = () => {
         </div>
       </div>
       <div className='relative hidden md:flex md:w-[1366px] md:h-[615px]'>
+        <div className='block'>
+          <ParticleAnimation/>
+        </div>
         <h1 className='text-[100px] mt-[100px] ml-[150px]'>WE</h1>
         <h1 className='flex text-[100px] justify-center items-center mt-[200px] ml-[-146px] border-r-4 h-[100px]'>{words[index].substring(0,subIndex)}</h1>
         <Link href={'/'} className='absolute flex left-1/2 -translate-x-1/2 flex-col bottom-0 p-[5px]'>
@@ -109,7 +112,9 @@ const Home = () => {
           <IoIosArrowDown className='text-[20px] ml-[100px] animate-bounce' />
         </Link>
       </div>
-      <ParticleAnimation/>
+      <div className='md:hidden'>
+        <ParticleAnimation/>
+      </div>
       </section>
   );
 };

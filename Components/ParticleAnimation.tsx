@@ -93,7 +93,7 @@ const ParticleAnimation: React.FC = () => {
   return (
       <canvas
         ref={canvasRef}
-        className="fixed top-0 left-0 mt-[208px] w-full h-[562px] md:h-[615px] md:mt-[68px] "
+        className="absolute w-full h-[550px] md:h-[615px] md:w-full"
       >
       </canvas> 
   );
