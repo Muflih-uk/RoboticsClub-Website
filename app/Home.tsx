@@ -3,6 +3,7 @@ import React, { useState,useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import ParticleAnimation from '@/Components/ParticleAnimation';
+import { IoIosArrowDown } from "react-icons/io";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -98,6 +99,14 @@ const Home = () => {
         <div className={`${isOpen ? 'hidden':'block'} md:hidden h-[160px] flex flex-col justify-center items-center`}>
           <h1 className='text-black text-3xl'>WE</h1>
           <h1 className='text-black text-3xl'>{words[index].substring(0,subIndex)}</h1>
+        </div>
+      </div>
+      <div className='relative hidden md:flex md:w-[1366px] md:h-[615px]'>
+        <h1 className='text-[100px] mt-[100px] ml-[150px]'>WE</h1>
+        <h1 className='text-[100px] mt-[200px] ml-[-170px]'>{words[index].substring(0,subIndex)}</h1>
+        <div className='absolute flex ml-[570px] mb-[30px] flex-col bottom-0'>
+          <h1>Scroll Down to Explore More</h1>
+          <IoIosArrowDown className='text-[20px] ml-[100px] animate-bounce' />
         </div>
       </div>
       <ParticleAnimation/>
