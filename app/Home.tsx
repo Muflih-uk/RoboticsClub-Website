@@ -58,23 +58,20 @@ const Home = () => {
               )}
             </button>
           </div>
-
-          { /* Mobile Menu (Visible when hamburger is clicked) */}
-          <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
-            <div className="flex flex-col space-y-2 py-4">
-              {navItems.map((item) => (
-                <Link key={item} href={`/${item.toLowerCase()}`}
-                    onClick={() => setIsOpen(false)}
-                  className="text-white hover:text-blue-500">
-                  {item}
-                </Link>
-              ))}
-            </div>
-          </div>
         </div>
       </nav>
+      <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
+        <div className='flex flex-col bg-red-600 space-y-2 py-4'>
+          {navItems.map((item) => (
+            <Link key={item} href={`/${item.toLowerCase()}`}
+              onClick={() => setIsOpen(false)}
+              className='text-white hover:text-blue-500'>
+              {item}
+            </Link>
+          ))}
+        </div>
+      </div>
       <ParticleAnimation/>
-      <h1 className='fixed text-red-900 bg-black'>Hello World</h1>
       </section>
   );
 };
