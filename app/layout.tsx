@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import karla from "@/fonts/Fonts";
-
+import ThemeProvider from "@/Components/ThemeProvider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +18,7 @@ export default function RootLayout({
       <body
         className={`${karla.className} antialiased`}
       >
-        {children}
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );
