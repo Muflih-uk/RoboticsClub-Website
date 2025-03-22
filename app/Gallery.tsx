@@ -20,7 +20,7 @@ const Gallery = () => {
         <div className="flex items-center justify-center md:p-[30px] flex-nowrap space-x-[30px] min-w-max">
           {
             photos.map((item,index)=>(
-              <Image key={index} src={item} width={300} height={300} alt={item} className="md:w-[400px] md:h-[400px] rounded-[30px] hover:scale-105 hover:rotate-8"/>
+              <Image key={index} src={item} width={300} height={300} alt={item} className=" md:w-[400px] md:h-[400px] rounded-[30px] hover:scale-105 hover:rotate-8"/>
             ))
           }
         </div>
