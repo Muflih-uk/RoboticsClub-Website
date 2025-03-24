@@ -2,6 +2,7 @@ import Home from "./Home";
 import Gallery from "./Gallery";
 import Project from "./Projects";
 import Achievements from "./Achiev";
+import Team from "./Team";
 
 const Page = () => {
   return(
@@ -10,6 +11,7 @@ const Page = () => {
       <Gallery/>
       <Project/>
       <Achievements/>
+      <Team/>
     </div>
   )
 }
