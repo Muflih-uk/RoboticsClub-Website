@@ -4,7 +4,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import ParticleAnimation from '@/Components/ParticleAnimation';
 import { IoIosArrowDown } from "react-icons/io";
-import ThemeToggle from '@/Components/ThemeToggle';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -60,7 +59,6 @@ const Home = () => {
                   {item}
                 </Link>
               ))}
-              <ThemeToggle />
             </div>
 
             {/* Menu Button (Visible on Mobile) */}
