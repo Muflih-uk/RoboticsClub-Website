@@ -28,7 +28,7 @@ const Achievements = () => {
       >
         <div className="flex items-center justify-center md:p-[30px] flex-nowrap space-x-[30px] min-w-max">
           {photos.map((item, index) => (
-            <div key={index} className="group w-[300px] h-[300px] md:w-[600px] md:h-[400px] perspective">
+            <div key={index} className="group w-[300px] h-[200px] md:w-[600px] md:h-[400px] perspective">
               <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
                 {/* Front Side (Image) */}
                 <div className="absolute w-full h-full backface-hidden">
