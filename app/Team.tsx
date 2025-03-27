@@ -63,7 +63,6 @@ const Team = () => {
               <FaLinkedin className="hidden group-hover:block text-[30px] text-black hover:text-white" />
             </Link>
           </div>
-
         </div>
 
 
@@ -83,7 +82,7 @@ const Team = () => {
           </div>
 
           <div className="flex flex-col shadow-2xl space-y-[10px] justify-center rounded-[10px] md:rounded-[30px] items-center mt-[20px] md:w-[20%] md:h-full h-[70%] w-[25%] bg-[#002C3E] hover:scale-125 group">
-            <h1 className="md:text-[25px] text-[10px] text-white">Technical Head</h1>
+            <h1 className="md:text-[20px] text-[10px] text-white">Technical Head</h1>
             <Image
               src={'/team/10.png'}
               width={100}
@@ -96,7 +95,7 @@ const Team = () => {
              </Link>
           </div>
           <div className="flex flex-col shadow-2xl space-y-[10px] justify-center rounded-[10px] md:rounded-[30px] items-center md:w-[20%] md:h-full mt-[20px] h-[70%] w-[25%] bg-[#002C3E] hover:scale-125 group">
-            <h1 className="text-[10px] md:text-[25px] text-white">Technical Head</h1>
+            <h1 className="text-[10px] md:text-[20px] text-white">Technical Head</h1>
             <Image
               src={'/team/11.png'}
               width={100}
@@ -112,7 +111,7 @@ const Team = () => {
 
         <div className="flex justify-center space-x-[230px] h-[33%] w-[80%]">
           <div className="flex flex-col shadow-2xl space-y-[10px] justify-center rounded-[10px] w-[90px] md:rounded-[30px] items-center md:w-[20%] md:h-full mt-[20px] h-[70%] bg-[#002C3E] hover:scale-125 group">
-            <h1 className="md:text-[13px] text-white text-[5px]">Event Coordination Team</h1>
+            <h1 className="md:text-[13px] text-white text-[5px]">Event Coordination Head</h1>
             <Image
               src={'/team/15.png'}
               width={100}
