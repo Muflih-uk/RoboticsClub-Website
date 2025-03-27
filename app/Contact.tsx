@@ -6,7 +6,7 @@ import { FaRegCopyright } from "react-icons/fa";
 
 const Contact = () => {
   return(
-    <section className="flex flex-col space-x-[30px] p-[10px] justify-center items-center h-[400px]">
+    <section id="contact us" className="flex flex-col space-x-[30px] p-[10px] justify-center items-center h-[400px]">
       <div className="flex h-[300px]">
         <div className="flex flex-col border-r-3 border-black space-y-[20px] mb-[20px] items-center justify-center h-[70%] w-[50%] ">
           <Image

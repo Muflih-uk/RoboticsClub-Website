@@ -7,7 +7,7 @@ import { IoIosArrowDown } from "react-icons/io";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const navItems = ['Team', 'Projects', 'Events', 'Contact Us'];
+  const navItems = ['Team', 'Projects', 'Achievements', 'Contact Us'];
   const words = ["INNOVATE", "BUILD", "CREATE"];
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
@@ -52,9 +52,9 @@ const Home = () => {
               alt='logo mobile'
               className='md:hidden'
             />
-            <div className="hidden md:flex space-x-[40px] ml-[400px]">
+            <div className="hidden md:flex space-x-[40px] ml-[350px]">
               {navItems.map((item) => (
-                <Link key={item} href={`/${item.toLowerCase()}`}
+                <Link key={item} href={`/#${item.toLowerCase()}`}
                   className={`font-bold text-3xl text-white hover:text-blue-500`}>
                   {item}
                 </Link>
@@ -88,7 +88,7 @@ const Home = () => {
         <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
           <div className='flex flex-col space-y-[2px] pt-[2px] px-[8px]'>
             {navItems.map((item) => (
-              <Link key={item} href={`/${item.toLowerCase()}`}
+              <Link key={item} href={`/#${item.toLowerCase()}`}
                 onClick={() => setIsOpen(false)}
                 className='text-white flex bg-black items-center justify-center h-[34px] pl-[20px] hover:text-blue-500 rounded-[10px]'>
                 {item}
@@ -97,8 +97,8 @@ const Home = () => {
           </div>
         </div>
         <div className={`${isOpen ? 'hidden':'block'} md:hidden h-[160px] flex flex-col justify-center items-center`}>
-          <h1 className='text-black text-3xl'>WE</h1>
-          <h1 className='text-black text-3xl border-r-4'>{words[index].substring(0,subIndex)}</h1>
+          <h1 className={` text-black text-3xl`}>WE</h1>
+          <h1 className={` antialiased text-black text-3xl border-r-4`}>{words[index].substring(0,subIndex)}</h1>
         </div>
       </div>
       <div className='relative hidden md:flex md:w-[1366px] md:h-[615px]'>

@@ -19,7 +19,7 @@ const Achievements = () => {
   };
 
   return (
-    <section className="flex flex-col items-center justify-center h-screen">
+    <section id="achievements" className="flex flex-col items-center justify-center h-screen">
       <h1 className="text-[40px]">ACHIEVEMENTS</h1>
       <div
         ref={scrollRef}
