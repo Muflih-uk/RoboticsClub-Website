@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${karla.className} antialiased`}
+        className={`${karla.className} bg-linear-to-r from-gray-300 via-gray-500 to-gray-700`}
       >
         {children}
       </body>
