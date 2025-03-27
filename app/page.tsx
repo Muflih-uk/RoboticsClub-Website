@@ -3,6 +3,7 @@ import Gallery from "./Gallery";
 import Project from "./Projects";
 import Achievements from "./Achiev";
 import Team from "./Team";
+import Contact from "./Contact";
 
 const Page = () => {
   return(
@@ -12,6 +13,7 @@ const Page = () => {
       <Project/>
       <Achievements/>
       <Team/>
+      <Contact/>
     </div>
   )
 }
