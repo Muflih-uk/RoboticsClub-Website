@@ -107,7 +107,7 @@ const Home = () => {
         </div>
         <h1 className='text-[100px] mt-[100px] ml-[150px]'>WE</h1>
         <h1 className='flex text-[100px] justify-center items-center mt-[200px] ml-[-146px] border-r-4 h-[100px]'>{words[index].substring(0,subIndex)}</h1>
-        <Link href={'/'} className='absolute flex left-1/2 -translate-x-1/2 flex-col bottom-0 p-[5px]'>
+        <Link href={'/#gallery'} className='absolute flex left-1/2 -translate-x-1/2 flex-col bottom-0 p-[5px]'>
           <h1>Scroll Down to Explore More</h1>
           <IoIosArrowDown className='text-[20px] ml-[100px] animate-bounce' />
         </Link>
