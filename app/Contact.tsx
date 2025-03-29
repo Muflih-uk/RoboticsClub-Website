@@ -29,9 +29,9 @@ const Contact = () => {
           <div className="flex flex-col items-center h-[70%] mb-[20px] p-[5px] w-[50%]">
             <h1 className="text-[30px]">Contact Us</h1>
             <form className="flex flex-col space-y-[10px] items-center justify-center mt-[20px] p-[20px] w-[80%] h-[80%]">
-              <input className="bg-linear-to-r from-gray-300 via-gray-500 to-gray-700 border-[2px] w-[400px] h-[40px] rounded-[10px] text-[20px] pl-[25px] outline-none" type="text" placeholder="name"/>
+              <input className="bg-linear-to-r from-gray-300 via-gray-500 to-gray-700 border-[2px] w-[400px] h-[40px] rounded-[10px] text-[20px] pl-[25px] outline-none" type="text" placeholder="Name"/>
               <input className="bg-linear-to-r from-gray-300 via-gray-500 to-gray-700 border-[2px] w-[400px] h-[40px] rounded-[10px] text-[20px] pl-[25px] outline-none" type="tel" placeholder="Number"/>
-              <input className="bg-linear-to-r from-gray-300 via-gray-500 to-gray-700 border-[2px] w-[400px] h-[40px] rounded-[10px] text-[20px] pl-[25px] outline-none" type="email" placeholder="email"/>
+              <input className="bg-linear-to-r from-gray-300 via-gray-500 to-gray-700 border-[2px] w-[400px] h-[40px] rounded-[10px] text-[20px] pl-[25px] outline-none" type="email" placeholder="Email"/>
               <textarea cols={4} className="bg-linear-to-r from-gray-300 via-gray-500 to-gray-700 border-[2px] w-[400px] h-[100px] rounded-[10px] text-[15px] pl-[25px] outline-none" placeholder="Message"/>
               <input className="bg-gray-600 border-3 w-[150px] h-[50px] rounded-full hover:bg-white" type="submit" value="Send Message" />
             </form>
@@ -42,7 +42,7 @@ const Contact = () => {
           <p className="text-[10px]">Robotics Club GEC Palakkad, All rights reserved</p>
         </div>
       </section>
-      <section id="contact us" className="h-screen px-[20px] bg-blue-600 md:hidden flex flex-col">
+      <section id="contact us" className="h-screen px-[20px] md:hidden flex flex-col">
         <div className="flex h-[300px] mt-[30px] border-b-2 justify-center">
           <div className="flex flex-col mt-[30px] space-y-[20px] mb-[20px] items-center justify-center h-[70%] w-[50%] ">
             <Image
@@ -66,10 +66,10 @@ const Contact = () => {
           <div className="flex flex-col items-center h-[70%] mb-[20px] p-[5px] w-[50%]">
               <h1 className="text-[25px] mt-[20px]">Contact Us</h1>
               <form className="flex flex-col space-y-[10px] items-center justify-center mt-[20px] p-[20px] w-[80%] h-[80%]">
-                <input className="border w-[300px] h-[40px] rounded-[10px] text-[20px] bg-linear-to-r from-gray-300 via-gray-500 to-gray-700 pl-[25px] outline-none" type="text" placeholder="name"/>
+                <input className="border w-[300px] h-[40px] rounded-[10px] text-[20px] bg-linear-to-r from-gray-300 via-gray-500 to-gray-700 pl-[25px] outline-none" type="text" placeholder="Name"/>
                 <input className="bg-linear-to-r from-gray-300 via-gray-500 to-gray-700 border w-[300px] h-[40px] rounded-[10px] text-[20px] pl-[25px] outline-none" type="tel" placeholder="Number"/>
-                <input className="bg-linear-to-r from-gray-300 via-gray-500 to-gray-700 border w-[300px] h-[40px] rounded-[10px] text-[20px] pl-[25px] outline-none" type="email" placeholder="email"/>
-                <textarea cols={4} className="bg-white w-[300px] h-[100px] rounded-[10px] text-[15px] pl-[25px] outline-none" placeholder="Message"/>
+                <input className="bg-linear-to-r from-gray-300 via-gray-500 to-gray-700 border w-[300px] h-[40px] rounded-[10px] text-[20px] pl-[25px] outline-none" type="email" placeholder="Email"/>
+                <textarea cols={4} className="bg-bg-linear-to-r from-gray-300 via-gray-500 to-gray-700 border w-[300px] h-[100px] rounded-[10px] text-[15px] pl-[25px] outline-none" placeholder="Message"/>
                 <input className="bg-gray-600 border-3 w-[100px] h-[50px] rounded-full hover:bg-white text-[10px]" type="submit" value="Send Message" />
               </form>
         </div>
