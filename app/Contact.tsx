@@ -59,10 +59,10 @@ const Contact = () => {
               </Link>
             </div>
           </div>
-          <div className="flex flex-col items-center h-[70%] mb-[20px] p-[5px] w-[50%]">
-            <h1 className="text-[30px] mt-[20px]">Contact Us</h1>
+          <div className="flex flex-col space-y-[20px] items-center h-[60%] p-[5px] w-[50%]">
 
             <form onSubmit={handleSubmit} className="flex flex-col space-y-[10px] items-center justify-center mt-[20px] p-[20px] w-[80%] h-[80%]">
+              <h1 className="text-[30px]">Contact Us</h1>
               <input name="name" value={formData.name} onChange={handleChange} className="bg-linear-to-r from-gray-300 via-gray-500 to-gray-700 border-[2px] w-[400px] h-[40px] rounded-[10px] text-[20px] pl-[25px] outline-none" type="text" placeholder="Name" required/>
               <input name="phone" value={formData.phone} onChange={handleChange} className="bg-linear-to-r from-gray-300 via-gray-500 to-gray-700 border-[2px] w-[400px] h-[40px] rounded-[10px] text-[20px] pl-[25px] outline-none" type="tel" placeholder="Number" required/>
               <input name="email" value={formData.email} onChange={handleChange} className="bg-linear-to-r from-gray-300 via-gray-500 to-gray-700 border-[2px] w-[400px] h-[40px] rounded-[10px] text-[20px] pl-[25px] outline-none" type="email" placeholder="Email" required/>
@@ -100,12 +100,13 @@ const Contact = () => {
         <div className=" flex justify-center">
           <div className="flex flex-col items-center h-[70%] mb-[20px] p-[5px] w-[50%]">
               <h1 className="text-[25px] mt-[20px]">Contact Us</h1>
-              <form className="flex flex-col space-y-[10px] items-center justify-center mt-[20px] p-[20px] w-[80%] h-[80%]">
-                <input className="border w-[300px] h-[40px] rounded-[10px] text-[20px] bg-linear-to-r from-gray-300 via-gray-500 to-gray-700 pl-[25px] outline-none" type="text" placeholder="Name"/>
-                <input className="bg-linear-to-r from-gray-300 via-gray-500 to-gray-700 border w-[300px] h-[40px] rounded-[10px] text-[20px] pl-[25px] outline-none" type="tel" placeholder="Number"/>
-                <input className="bg-linear-to-r from-gray-300 via-gray-500 to-gray-700 border w-[300px] h-[40px] rounded-[10px] text-[20px] pl-[25px] outline-none" type="email" placeholder="Email"/>
-                <textarea cols={4} className="bg-bg-linear-to-r from-gray-300 via-gray-500 to-gray-700 border w-[300px] h-[100px] rounded-[10px] text-[15px] pl-[25px] outline-none" placeholder="Message"/>
-                <input className="bg-gray-600 border-3 w-[100px] h-[50px] rounded-full hover:bg-white text-[10px]" type="submit" value="Send Message" />
+              <form onSubmit={handleSubmit} className="flex flex-col space-y-[10px] items-center justify-center mt-[20px] p-[20px] w-[80%] h-[80%]">
+                <input name="name" value={formData.name} onChange={handleChange} className="border w-[300px] h-[40px] rounded-[10px] text-[20px] bg-linear-to-r from-gray-300 via-gray-500 to-gray-700 pl-[25px] outline-none" type="text" placeholder="Name"/>
+                <input name="phone" value={formData.phone} onChange={handleChange} className="bg-linear-to-r from-gray-300 via-gray-500 to-gray-700 border w-[300px] h-[40px] rounded-[10px] text-[20px] pl-[25px] outline-none" type="tel" placeholder="Number"/>
+                <input name="email" value={formData.email} onChange={handleChange} className="bg-linear-to-r from-gray-300 via-gray-500 to-gray-700 border w-[300px] h-[40px] rounded-[10px] text-[20px] pl-[25px] outline-none" type="email" placeholder="Email"/>
+                <textarea name="message" value={formData.message} onChange={handleChange} cols={4} className="bg-bg-linear-to-r from-gray-300 via-gray-500 to-gray-700 border w-[300px] h-[100px] rounded-[10px] text-[15px] pl-[25px] outline-none" placeholder="Message"/>
+                <button className="bg-gray-600 border-3 w-[100px] h-[50px] rounded-full hover:bg-white text-[10px]" type="submit">Send Message</button>
+                { status && <p className="text-center mt-2">{status}</p> }
               </form>
         </div>
         </div>
