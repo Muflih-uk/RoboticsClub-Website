@@ -16,7 +16,7 @@ const Gallery = () => {
       <div
        ref={scrollRef}
        onWheel={handleScroll}
-        className="flex p-4 pl-4 space-x-4 overflow-x-auto w-[99%] md:w-[99%] md:h-[200px] h-[200px] scrollbar-hide">
+        className="flex p-4 pl-4 space-x-4 overflow-x-auto w-[99%] md:w-[99%] md:h-[300px] h-[200px] scrollbar-hide">
         <div className="flex  items-center justify-center md:p-[30px] flex-nowrap space-x-[30px] min-w-max">
           {
             photos.map((item,index)=>(
