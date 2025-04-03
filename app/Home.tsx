@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import ParticleAnimation from '@/Components/ParticleAnimation';
 import { IoIosArrowDown } from "react-icons/io";
+import { karla } from '@/fonts/Fonts';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -90,7 +91,7 @@ const Home = () => {
             {navItems.map((item) => (
               <Link key={item} href={`/#${item.toLowerCase()}`}
                 onClick={() => setIsOpen(false)}
-                className='text-white flex bg-black items-center justify-center h-[34px] pl-[20px] hover:text-blue-500 rounded-[10px]'>
+                className={`${karla} text-white flex bg-black items-center justify-center h-[34px] pl-[20px] hover:text-blue-500 rounded-[10px]`}>
                 {item}
               </Link>
             ))}
