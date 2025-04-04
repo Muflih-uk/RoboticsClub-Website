@@ -29,7 +29,7 @@ const Gallery = () => {
         <div className="absolute  flex items-center justify-center opacity-[100%] md:opacity-[20%] group-hover:opacity-[100%] transition duration-[2s] bg-linear-to-r from-purple-500 via-indigo-500 to-blue-500 w-[330px] h-[420px] md:w-[650px] md:h-[460px] rounded-lg blur-2xl">
         </div>
         <div className="flex relative px-[35px] items-center justify-center w-[600px] rounded-lg h-[400px] bg-black ">
-          <p className="text-white">The Robotics Club of Government Engineering College Palakkad is a student-driven initiative dedicated to fostering innovation, technical expertise, and problem-solving skills in the field of robotics and automation. It provides a platform for students to explore robotics, embedded systems, artificial intelligence, and machine learning through hands-on projects, workshops, and competitions.</p>
+          <p className="text-white text-center">The Robotics Club of Government Engineering College Palakkad is a student-driven initiative dedicated to fostering innovation, technical expertise, and problem-solving skills in the field of robotics and automation. It provides a platform for students to explore robotics, embedded systems, artificial intelligence, and machine learning through hands-on projects, workshops, and competitions.</p>
         </div>
       </div>
     </section>

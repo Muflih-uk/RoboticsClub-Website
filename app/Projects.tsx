@@ -5,9 +5,8 @@ import Image from "next/image";
 const Project = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const photos = [
-    { src: "/2.png", desc: "Description for Image 2" },
-    { src: "/4.png", desc: "Description for Image 4" },
-    { src: "/7.png", desc: "Description for Image 7" },
+    { src: "/2.png", desc: "A rugged and agile war bot built for precision, power, and dominance in combat robotics." },
+    { src: "/7.png", desc: "A dynamic soccer bot engineered for speed, precision, and strategic play in robotic soccer battles." },
   ];
 
   const handleScroll = (event: React.WheelEvent) => {
@@ -40,7 +39,7 @@ const Project = () => {
                 </div>
 
                 {/* Back Side (Description) */}
-                <div className="absolute w-full h-full flex items-center justify-center bg-black text-white text-lg font-bold rounded-[30px] transform rotate-y-180 backface-hidden">
+                <div className="absolute w-full h-full flex items-center justify-center bg-black text-white text-lg font-bold text-center rounded-[30px] transform rotate-y-180 backface-hidden">
                   {item.desc}
                 </div>
               </div>
