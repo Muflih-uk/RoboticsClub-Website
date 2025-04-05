@@ -5,11 +5,11 @@ import Image from "next/image";
 const Achievements = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const photos = [
-    { src: "/1.png", desc: "Description for Image" },
-    { src: "/12.png", desc: "Description for Image" },
-    { src: "/13.png", desc: "Description for Image" },
-    { src: "/14.png", desc: "Description for Image" },
-    { src:"/15.png", desc: "Description of Image" }
+    { src: "/1.png", desc: "Runners-Up in Line Follower Competition @ ScaleUp Conclave 2025" },
+    { src: "/12.png", desc: "Winners in RoboWar @ Conscientia'23" },
+    { src: "/13.png", desc: "Runners-Up in RoboWar @ Dyuksha'23" },
+    { src: "/14.png", desc: "Winners in RoboWar @ NUEVA 2023" },
+    { src:"/15.png", desc: "Runners-Up in RoboWar @ Trilok 2023" }
   ];
 
   const handleScroll = (event: React.WheelEvent) => {
