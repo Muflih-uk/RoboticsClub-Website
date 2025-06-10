@@ -40,7 +40,7 @@ const Contact = () => {
   }
   return(
     <div>
-      <section id="contact us" className="hidden md:flex flex-col space-x-[30px] p-[10px] justify-center items-center h-[400px]">
+      <section id="contact us" className="hidden md:flex flex-col space-x-[30px] p-[10px] justify-center items-center bg-red-600 h-[400px]">
         <div className="flex h-[300px]">
           <div className="flex flex-col border-r-3 border-black space-y-[20px] mb-[20px] items-center justify-center h-[70%] w-[50%] ">
             <Image
@@ -77,16 +77,16 @@ const Contact = () => {
           <p className="text-[10px]">Robotics Club GEC Palakkad, All rights reserved</p>
         </div>
       </section>
-      <section id="contact us" className="h-screen px-[20px] md:hidden flex flex-col">
-        <div className="flex h-[300px] mt-[30px] border-b-2 justify-center">
-          <div className="flex flex-col mt-[30px] space-y-[20px] mb-[20px] items-center justify-center h-[70%] w-[50%] ">
+      <section id="contact us" className="px-[20px] md:hidden flex flex-col">
+        <div className="flex h-[150px] mt-[30px] border-b-2 justify-center">
+          <div className="flex flex-col mt-[30px] space-y-[10px] mb-[20px] items-center justify-center h-[70%] w-[50%] ">
             <Image
               src={'/Logo.png'}
               width={600}
               height={600}
               alt="Logo"
             />
-            <Link href={'mailto:'} className="hover:text-blue-600 text-[10px]">mail@gmail.com</Link>
+            <Link href={'mailto:roboticsclubgecpkd@gmail.com'} className="hover:text-blue-600 text-[10px]">roboticsclubgecpkd@gmail.com</Link>
             <div className="flex justify-center items-center space-x-[30px] h-[50px]">
               <Link href={'/'}>
                 <FaLinkedin className="h-[20px] text-black w-[20px] hover:text-blue-900" />
@@ -97,10 +97,10 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className=" flex justify-center">
-          <div className="flex flex-col items-center h-[70%] mb-[20px] p-[5px] w-[50%]">
-              <h1 className="text-[25px] mt-[20px]">Contact Us</h1>
-              <form onSubmit={handleSubmit} className="flex flex-col space-y-[10px] items-center justify-center mt-[20px] p-[20px] w-[80%] h-[80%]">
+        <div className="flex justify-center">
+          <div className="flex flex-col items-center h-[70%] p-[5px] w-[50%]">
+              <h1 className="text-[25px] mt-[10px]">Contact Us</h1>
+              <form onSubmit={handleSubmit} className="flex flex-col space-y-[10px] items-center justify-center mt-[10px] p-[10px] w-[80%] h-[80%]">
                 <input name="name" value={formData.name} onChange={handleChange} className="border w-[300px] h-[40px] rounded-[10px] text-[20px] bg-linear-to-r from-gray-300 via-gray-500 to-gray-700 pl-[25px] outline-none" type="text" placeholder="Name"/>
                 <input name="phone" value={formData.phone} onChange={handleChange} className="bg-linear-to-r from-gray-300 via-gray-500 to-gray-700 border w-[300px] h-[40px] rounded-[10px] text-[20px] pl-[25px] outline-none" type="tel" placeholder="Number"/>
                 <input name="email" value={formData.email} onChange={handleChange} className="bg-linear-to-r from-gray-300 via-gray-500 to-gray-700 border w-[300px] h-[40px] rounded-[10px] text-[20px] pl-[25px] outline-none" type="email" placeholder="Email"/>

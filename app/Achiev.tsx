@@ -19,14 +19,14 @@ const Achievements = () => {
   };
 
   return (
-    <section id="achievements" className="flex flex-col items-center justify-center h-screen">
+    <section id="achievements" className="h-[350px] md:h-[600px] flex flex-col items-center justify-center">
       <h1 className="text-[40px]">ACHIEVEMENTS</h1>
       <div
         ref={scrollRef}
         onWheel={handleScroll}
         className="flex p-4 space-x-4 overflow-x-auto w-[95%] h-[600px] scrollbar-hide"
       >
-        <div className="flex items-center justify-center md:p-[30px] flex-nowrap space-x-[30px] min-w-max">
+        <div className="flex md:p-[30px] flex-nowrap space-x-[30px] min-w-max">
           {photos.map((item, index) => (
             <div key={index} className="group w-[300px] h-[200px] md:w-[600px] md:h-[400px] perspective">
               <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">

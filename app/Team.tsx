@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Team = () => {
   return(
-    <section id='team' className="flex flex-col justify-center items-center h-screen">
+    <section id='team' className="flex flex-col justify-center items-center">
       <h1 className="text-[40px]">TEAM</h1>
       <div className="flex flex-col space-y-[10px] items-center justify-center md:p-[20px] h-[90%] w-[90%]">
         <div className="flex md:px-[25px] h-[33%] w-[100%] justify-center space-x-[10px] md:h-[33%] md:w-[80%]">
